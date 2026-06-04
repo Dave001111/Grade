@@ -5,6 +5,18 @@ import java.util.Scanner;
 
 
 
+  Scanner input = new Scanner(System.in);
+
+
+  System.out.print("How many students Do you have?: ");
+  int students = input.nextInt();
+
+  System.out.print("How many subjects do they offer?: ");
+  int subjects = input.nextInt();
+
+
+
+
 
 
 
