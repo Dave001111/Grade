@@ -15,7 +15,7 @@ import java.util.Scanner;
   int subjects = input.nextInt();
 
 
-
+  int[] scores = new int[students];
 
 
 
