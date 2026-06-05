@@ -32,5 +32,36 @@ public class grade {
             System.out.println("Saving >>>>>>>>>>>>>>>>>>>>>>>");
             System.out.println("Saved Successfully");
         }
-    }
+
+
+           System.out.println("=================================================");
+           System.out.printf("%-12s", "STUDENT");
+
+           for (int subindex = 0; subindex < subjects; subindex++) {
+                System.out.printf("%-8s", "SUB" + (subindex + 1));
+            }
+
+          System.out.printf("%-8s%-8s%n", "TOT", "AVE");
+          System.out.println("=================================================");
+
+          for (int index = 0; index < students; index++) {
+               int total = 0;
+
+          System.out.printf("%-12s", "Student " + (index + 1));
+
+          for (int subindex = 0; subindex < subjects; subindex++) {
+              int score = scores[index * subjects + subindex];
+              total += score;
+              System.out.printf("%-8d", score);
+          }
+
+              double average = (double) total / subjects;
+              System.out.printf("%-8d%-8.2f%n", total, average);
+          }
+
+
+
+
+
+       }
 }
